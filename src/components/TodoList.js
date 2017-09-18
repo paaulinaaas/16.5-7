@@ -3,7 +3,7 @@ import Todo from './Todo';
 
 const TodoList = ({data, remove}) => {
     const listTasks = data.map((todo) => {
-        return (<Todo={todo} key={todo.id} remove={remove} />)
+        return (<Todo todo={todo} key={todo.id} remove={remove} />)
     });
 
     return (
